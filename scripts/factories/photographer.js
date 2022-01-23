@@ -3,7 +3,7 @@
 export const photographerFactory = (data) => {
   const { name, portrait, city, country, price, tagline, id } = data;
 
-  const picture = `assets/photos/photographers/${portrait}`;
+  const picture = `assets/photos/Photographers/${portrait}`;
 
   function getUserCardDOM() {
     const article = document.createElement("article");
