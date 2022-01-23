@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/photographer.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" type="image/png" href="assets/favicon.png" /> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fisheye - photographe</title>
+  </head>
+  <body>
+    <div class="page-wrapper" aria-hidden="false">
+      <header>
+        <a href="index.html"
+          ><img
+            src="assets/icons/logo.png"
+            class="logo"
+            alt="Fisheye Home page"
+        /></a>
+      </header>
+      <main id="main">
+        <header class="photograph-header"></header>
+        <section class="sort-cards">
+          <label>Trier par</label>
+          <div id="sortByMenu">
+            <button id="button1">Popularité</button>
+            <button id="button2">Date</button>
+            <button id="button3">Titre</button>
+          </div>
+          <span id="sortIcon"></span>
+        </section>
+        <section class="portfolio-section"></section>
+        <aside></aside>
+      </main>
+    </div>
+    <!-- ------- lightbox ---------- -->
+    <div
+      class="slider-modal"
+      aria-hidden="true"
+      role="dialog"
+      aria-label="Carousel of media visuals"
+    >
+      <div class="slider-container">
+        <div class="arrow-left-container">
+          <button class="arrow-left"></button>
+        </div>
+        <div class="slider-media-container"></div>
+        <div class="arrow-right-container">
+          <button class="arrow-right"></button>
+        </div>
+        <div class="close-lightbox">x</div>
+      </div>
+    </div>
+    <!-- ------- End of lightbox ---------- -->
+
+    <!-- ------- Contact Modal ---------- -->
+    <div id="contact_modal" aria-hidden="true" role="dialog">
+      <div class="modal">
+        <header>
+          <h2>Contactez-moi</h2>
+          <img
+            src="assets/icons/close.svg"
+            class="close-modal-button"
+            alt="close modal"
+          />
+        </header>
+        <form>
+          <div class="formData">
+            <label for="first">Prénom</label>
+            <input class="text-control" type="text" id="first" name="first" />
+            <label for="last">Nom</label>
+            <input class="text-control" type="text" id="last" name="last" />
+            <label for="email">Email</label>
+            <input class="text-control" type="email" id="email" name="email" />
+            <label for="message">Votre message</label>
+            <input id="message" name="message" type="text" />
+          </div>
+          <button type="submit" class="contact-button">Envoyer</button>
+        </form>
+      </div>
+    </div>
+    <!-- ------- End of Contact Modal ---------- -->
+    <script type="module" src="scripts/pages/photographer.js"></script>
+  </body>
+</html>
