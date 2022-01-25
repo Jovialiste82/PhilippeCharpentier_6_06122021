@@ -3,7 +3,7 @@
 class VideoMediaSubFactory {
   static render(folder, video, w, h, type) {
     return `<video class="media-${type}-video lb-target" tabindex="0" width=${w} height=${h} preload="metadata" ${
-      type === "slide" ? "autoplay" : ""
+      type === "slide" ? "autoplay muted" : ""
     }>
                 <source src="assets/photos/${folder}/${video}" type="video/mp4">
               </video>`;
