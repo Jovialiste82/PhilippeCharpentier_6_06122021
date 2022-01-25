@@ -32,7 +32,7 @@ export const mediaFactory = (photographerName, portfolioItem) => {
         
         <div class="media-card-text">
           <span class="media-card-title">${title}</span>
-          <span class="media-card-likes" tabindex="0" >${likes} &hearts;</span>
+          <span class="media-card-likes" aria-label="likes" tabindex="0" >${likes} &hearts;</span>
         </div>
       </div>
 `;

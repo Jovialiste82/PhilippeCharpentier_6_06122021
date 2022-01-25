@@ -25,10 +25,16 @@
         <header class="photograph-header"></header>
         <section class="sort-cards">
           <label>Trier par</label>
-          <div id="sortByMenu">
-            <button id="button1">Popularité</button>
-            <button id="button2">Date</button>
-            <button id="button3">Titre</button>
+          <div
+            id="sortByMenu"
+            aria-label="Order by"
+            role="button"
+            aria-haspopup="listbox"
+            aria-expanded
+          >
+            <button id="button1" role="listbox">Popularité</button>
+            <button id="button2" role="listbox">Date</button>
+            <button id="button3" role="listbox">Titre</button>
           </div>
           <span id="sortIcon"></span>
         </section>

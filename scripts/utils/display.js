@@ -47,7 +47,7 @@ export const displayPhotographerInfo = async (photographer, totalLikes) => {
           <p class="location">${city}, ${country}</p>
           <p class="tagline">${tagline}</p>
         </div>
-        <button class="contact-button">
+        <button aria-label="Contact Me" class="contact-button">
           Contactez-moi
         </button>
         <img src=${picture} alt="${name}">
