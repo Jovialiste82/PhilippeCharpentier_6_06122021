@@ -10,7 +10,8 @@ async function getPhotographers() {
   });
   let data = await res.json();
   const newDataMediaArr = data.media.sort((a, b) => b.likes - a.likes);
-  data = { ...data, media: newDataMediaArr, sort: "Popularité" };
+  data = { ...data, media: newDataMediaArr, sort: "likes" };
+  console.log(data);
 
   // Store data in Local Storage (like feature and other evolutions)
   if (localStorage.getItem("data") == null) {

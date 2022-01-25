@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 
 export const photographerFactory = (data) => {
-  const { name, portrait, city, country, price, tagline, id } = data;
+  const { name, portrait, city, country, price, tagline, id, alt } = data;
 
   const picture = `assets/photos/Photographers/${portrait}`;
 
@@ -11,7 +11,7 @@ export const photographerFactory = (data) => {
     const url = `${baseURL}?photographer=${id}`;
     article.innerHTML = `
       <a href=${url}>
-        <img src=${picture} alt="">
+        <img src=${picture} alt="${alt}">
         <h2 class="photographer-name">${name}</h2>
       </a>
       <div>
